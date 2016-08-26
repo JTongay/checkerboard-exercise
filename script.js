@@ -10,7 +10,11 @@
         colors.style.float = "left"
         colors.style.width = "11.1%"
         colors.style.paddingBottom = "11.1%"
-        colors.style.backgroundColor = "#" + (Math.floor(Math.random() * 1000)).toString()
+        if (i % 2 === 0) {
+            colors.style.backgroundColor = "rgba(170, 30, 90, " + (.03 * i) + ")";
+        } else {
+            colors.style.backgroundColor = "rgba(30, 170, 190, " + (.03 * i) + ")";
+        }
 
         // if (i % 2 === 0) {
         //     colors.style.backgroundColor = "red"
